@@ -2,8 +2,8 @@ Overview
 
 This repository contains two distinct sets of tests:
 
-- Core tests: validate Flask’s internal APIs and behavior, located in the top-level `tests/` directory.
-- Example app tests: validate the tutorial and patterns repositories under `examples/`, each with its own `tests/` directory and local config.
+- Core tests: validate Flask's internal APIs and behavior, located in the top-level `tests/` directory.
+- Example app tests: validate the example applications under `examples/`, each with its own `tests/` directory and local config.
 
 Core tests (repository root)
 
@@ -58,4 +58,3 @@ Notes and tips
 - Selecting tests: Use `pytest -k <expr>` to filter tests (for example, `pytest -k templating`).
 - Coverage: For core tests, coverage is configured in the root `pyproject.toml`. For example apps, coverage is configured in each example’s `pyproject.toml`.
 - Environments: If you use tox, see `pyproject.toml` under `[tool.tox.env.*]` for available environments.
-
